@@ -12,7 +12,7 @@ Original App Design Project - README Template
 
 ## Overview
 ### Description
-This is an app that will allow people to bid on items they would like to own
+This is an app that will allow people to bid on items they would like to own.  You will also be able to post your own items for auction. 
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
