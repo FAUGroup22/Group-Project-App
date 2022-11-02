@@ -95,8 +95,7 @@ This is an app that will allow people to bid on items they would like to own
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="https://i.imgur.com/d5tGTpK.png
-" width=600>
+<img src="https://i.imgur.com/d5tGTpK.png" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 https://www.figma.com/file/8DdSqyvbw17NXdppMqA5SX/Untitled?node-id=1%3A3
