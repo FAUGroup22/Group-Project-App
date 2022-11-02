@@ -1,8 +1,8 @@
-# Group-Project-App
 Original App Design Project - README Template
 ===
 
 # UBID
+# By: Nicholas Giacobbe and Garrett Bell
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -35,6 +35,9 @@ This is an app that will allow people to bid on items they would like to own
 * The user can see live auctions
 * The user can click a specific auction and make bid 
 * The user can post items for auction
+* The user can see what items they have won
+* The user can pay for items through an api
+* The user can edit items 
 
 **Optional Nice-to-have Stories**
 
@@ -52,7 +55,11 @@ This is an app that will allow people to bid on items they would like to own
  * Bid Screen
      * The user will be able to actively bid on an item of their choice
 * Post Screen
-    * The user can post and item for auction, set the price of the item, and time limit. 
+    * The user can post and item for auction, set the price of the item, and time limit. This will be reused to edit items. 
+* Purchased Screen
+    * The user will be able to see which items they have won with the highest bid and will be able to hit a pay now button that will bring up a payment api.
+* Items Screen
+    * The user will be able to see what items they have posted.
 
 ### 3. Navigation
 
@@ -61,6 +68,7 @@ This is an app that will allow people to bid on items they would like to own
 * Home tab
 * Auction tab
 * Post Tab
+* Purchased Tab
 
 **Flow Navigation** (Screen to Screen)
 
@@ -76,13 +84,25 @@ This is an app that will allow people to bid on items they would like to own
 * Post Screen back to Home Screen
     * Once the users posts and item for auctions, they will be brought back to the home screen.  The user will also be able to leave the post screen without posting something. 
 
+* Home Screen to Purchases Screen
+    * User will click the tab bar button labeled purchased Items. This will bring the user to a page that will display which items they haved purchased. A pay now item will bring up a payment api outside the app. 
+
+* Home Screen to My Items
+    * User will click the tab bar button labeled My Items. This will bring the user to a page that will display which items they haved uploaded for auction.
+
+* My Items to Post Screen 
+    * User will click edit button on item that will bring up post screen with filled out information for user to edit.
+
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="https://i.imgur.com/572GB3X.png" width=600>
+<img src="https://i.imgur.com/d5tGTpK.png
+" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
+https://www.figma.com/file/8DdSqyvbw17NXdppMqA5SX/Untitled?node-id=1%3A3
 
 ### [BONUS] Interactive Prototype
+
 
 ## Schema 
 [This section will be completed in Unit 9]
