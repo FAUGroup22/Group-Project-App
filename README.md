@@ -15,7 +15,7 @@ Original App Design Project - README Template
 This is an app that will allow people to bid on items they would like to own.
 
 Updated Walkthrough:
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/WogDpKQb6Q.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 
