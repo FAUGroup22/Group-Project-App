@@ -29,9 +29,9 @@ This is an app that will allow people to bid on items they would like to own.
 
 **Required Must-have Stories**
 
-* The user will be able to see the app icon on the home screen and see the logo during the load screen
-* The user can create an account
-* The user can sign into a pre-exisiting account
+* The user will be able to see the app icon on the home screen and see the logo during the load screen (Completed)
+* The user can create an account (Completed)
+* The user can sign into a pre-exisiting account (Completed)
 * The user can see live auctions
 * The user can click a specific auction and make bid 
 * The user can post items for auction
