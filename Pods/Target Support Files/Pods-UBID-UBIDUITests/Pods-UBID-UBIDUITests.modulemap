@@ -1,6 +1,0 @@
-framework module Pods_UBID_UBIDUITests {
-  umbrella header "Pods-UBID-UBIDUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
