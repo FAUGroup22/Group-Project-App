@@ -72,6 +72,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         post["auctionTime"] = auctionTime
         post["highbidderId"] = highBidder
         post["author"] = PFUser.current()!
+        post["auctionOver"] = false
         let imageData = imageView.image!.pngData()!
         let file = PFFileObject(data: imageData)
         post["image"] = file
