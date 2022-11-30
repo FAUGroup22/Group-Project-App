@@ -17,6 +17,7 @@
 		657B86742936A397003DA41F /* ubidv2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B86732936A397003DA41F /* ubidv2Tests.swift */; };
 		657B867E2936A397003DA41F /* ubidv2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B867D2936A397003DA41F /* ubidv2UITests.swift */; };
 		657B86802936A397003DA41F /* ubidv2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B867F2936A397003DA41F /* ubidv2UITestsLaunchTests.swift */; };
+		658065242936E4ED0085616C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658065232936E4ED0085616C /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		657B86792936A397003DA41F /* ubidv2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ubidv2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		657B867D2936A397003DA41F /* ubidv2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ubidv2UITests.swift; sourceTree = "<group>"; };
 		657B867F2936A397003DA41F /* ubidv2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ubidv2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		658065232936E4ED0085616C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		BD9F0E772600502D9AD77237 /* Pods_ubidv2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ubidv2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 				657B86652936A396003DA41F /* Assets.xcassets */,
 				657B86672936A396003DA41F /* LaunchScreen.storyboard */,
 				657B866A2936A396003DA41F /* Info.plist */,
+				658065232936E4ED0085616C /* CameraViewController.swift */,
 			);
 			path = ubidv2;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				657B86612936A394003DA41F /* LoginViewController.swift in Sources */,
+				658065242936E4ED0085616C /* CameraViewController.swift in Sources */,
 				657B865D2936A394003DA41F /* AppDelegate.swift in Sources */,
 				657B865F2936A394003DA41F /* SceneDelegate.swift in Sources */,
 			);
