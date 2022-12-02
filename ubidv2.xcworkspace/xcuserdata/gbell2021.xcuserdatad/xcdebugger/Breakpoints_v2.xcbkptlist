@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DA3A9CB2-13E9-4CEC-909B-D8D4A495974B"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "14D3FC06-BA75-46D0-AE1B-115836F1C92D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ubidv2/PostViewCellTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "PostViewCellTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "14D3FC06-BA75-46D0-AE1B-115836F1C92D - 6834710228b4ebd8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ubidv2.PostViewCellTableViewCell.itembidLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "ubidv2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gbell2021/Desktop/ubidV3/ubidv2/PostViewCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "14D3FC06-BA75-46D0-AE1B-115836F1C92D - c8ab2bfb50aa8fec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ubidv2.PostViewCellTableViewCell.itembidLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "ubidv2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gbell2021/Desktop/ubidV3/ubidv2/PostViewCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "14D3FC06-BA75-46D0-AE1B-115836F1C92D - 6fd42443188ab0db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ubidv2.PostViewCellTableViewCell.itembidLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "ubidv2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gbell2021/Desktop/ubidV3/ubidv2/PostViewCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "14D3FC06-BA75-46D0-AE1B-115836F1C92D - 50c2c93a04596cd8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ubidv2.PostViewCellTableViewCell.itembidLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ubidv2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gbell2021/Desktop/ubidV3/ubidv2/PostViewCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "14D3FC06-BA75-46D0-AE1B-115836F1C92D - 567520ec3be88d83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ubidv2.PostViewCellTableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; ubidv2.PostViewCellTableViewCell"
+                  moduleName = "ubidv2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gbell2021/Desktop/ubidV3/ubidv2/PostViewCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "263">
+               </Location>
+               <Location
+                  uuid = "14D3FC06-BA75-46D0-AE1B-115836F1C92D - d2676166b6a28697"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ubidv2.PostViewCellTableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ubidv2.PostViewCellTableViewCell&gt;"
+                  moduleName = "ubidv2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gbell2021/Desktop/ubidV3/ubidv2/PostViewCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
