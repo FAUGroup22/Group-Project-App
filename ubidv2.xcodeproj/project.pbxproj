@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0E63FCA97457A59047C1D16A /* Pods_ubidv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9F0E772600502D9AD77237 /* Pods_ubidv2.framework */; };
+		657A04F2293A332800BBBCD7 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A04F1293A332800BBBCD7 /* FeedTableViewController.swift */; };
+		657A04F4293A338C00BBBCD7 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657A04F3293A338C00BBBCD7 /* FeedCell.swift */; };
 		657B865D2936A394003DA41F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B865C2936A394003DA41F /* AppDelegate.swift */; };
 		657B865F2936A394003DA41F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B865E2936A394003DA41F /* SceneDelegate.swift */; };
 		657B86612936A394003DA41F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B86602936A394003DA41F /* LoginViewController.swift */; };
@@ -40,6 +42,8 @@
 /* Begin PBXFileReference section */
 		2B5360E8CA7E509A587B3C62 /* Pods-ubidv2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ubidv2.debug.xcconfig"; path = "Target Support Files/Pods-ubidv2/Pods-ubidv2.debug.xcconfig"; sourceTree = "<group>"; };
 		5E55AE8F62A7777D0A265687 /* Pods-ubidv2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ubidv2.release.xcconfig"; path = "Target Support Files/Pods-ubidv2/Pods-ubidv2.release.xcconfig"; sourceTree = "<group>"; };
+		657A04F1293A332800BBBCD7 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		657A04F3293A338C00BBBCD7 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		657B86592936A394003DA41F /* ubidv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ubidv2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		657B865C2936A394003DA41F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		657B865E2936A394003DA41F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				657B86672936A396003DA41F /* LaunchScreen.storyboard */,
 				657B866A2936A396003DA41F /* Info.plist */,
 				658065232936E4ED0085616C /* CameraViewController.swift */,
+				657A04F1293A332800BBBCD7 /* FeedTableViewController.swift */,
+				657A04F3293A338C00BBBCD7 /* FeedCell.swift */,
 			);
 			path = ubidv2;
 			sourceTree = "<group>";
@@ -331,8 +337,10 @@
 			files = (
 				657B86612936A394003DA41F /* LoginViewController.swift in Sources */,
 				658065242936E4ED0085616C /* CameraViewController.swift in Sources */,
+				657A04F2293A332800BBBCD7 /* FeedTableViewController.swift in Sources */,
 				657B865D2936A394003DA41F /* AppDelegate.swift in Sources */,
 				657B865F2936A394003DA41F /* SceneDelegate.swift in Sources */,
+				657A04F4293A338C00BBBCD7 /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
