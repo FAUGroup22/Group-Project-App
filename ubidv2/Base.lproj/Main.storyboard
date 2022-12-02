@@ -206,7 +206,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="8wy-Y7-q0J">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="rLb-cX-d7a"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="rLb-cX-d7a">
+                            <connections>
+                                <action selector="onLogout:" destination="dMv-WV-GY2" id="loj-SZ-p2w"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="camera" catalog="system" id="ZZZ-pg-Kzp">
                             <connections>
                                 <segue destination="oGH-pf-4dt" kind="presentation" id="XRo-pm-NDl"/>
@@ -226,7 +230,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="qTH-jP-fmd">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="qTH-jP-fmd">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="386"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
