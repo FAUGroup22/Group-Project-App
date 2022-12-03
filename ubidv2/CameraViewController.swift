@@ -68,7 +68,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         let post = PFObject(className: "items")
         post["description"] = descriptionTextView.text
         post["title"] = titleTextField.text
-        post["statingBid"] = bidTextField.text
+        let bid: Double? = Double(bidTextField.text!)
+        post["statingBid"] = bid
         post["auctionTime"] = Date().addingTimeInterval(TimeInterval(auctionTime*60))
         post["highbidderId"] = highBidder
         post["author"] = PFUser.current()!

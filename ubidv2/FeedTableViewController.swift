@@ -9,8 +9,14 @@ import UIKit
 import Parse
 class FeedTableViewController: UITableViewController {
     var posts = [PFObject]()
+    let myRefreshControll = UIRefreshControl()
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadFeed()
+        myRefreshControll.addTarget(self, action: #selector(loadFeed), for: .valueChanged)
+        self.tableView.rowHeight=UITableView.automaticDimension
+        self.tableView.estimatedRowHeight = 150
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -22,6 +28,33 @@ class FeedTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeedCell") as! FeedCell
         let post = posts[indexPath.row]
         cell.titleLable.text = post["title"] as? String
+        let bid:Double = post["statingBid"] as! Double
+        let bidStr = String(format: "%.2f", bid)
+        cell.bidLabel.text = bidStr
+        
+        let currDate = Date()
+        let endDate: Date = post["auctionTime"] as! Date
+        let remainingTime: TimeInterval = endDate.timeIntervalSince(currDate);
+        let formatter = DateComponentsFormatter()
+        formatter.unitsStyle = .short
+        formatter.allowedUnits = [.hour, .minute]
+        formatter.zeroFormattingBehavior = .pad
+
+        let remainingString = formatter.string(from: remainingTime)
+        cell.timeRemaining.text = remainingString
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        let imageFile = post["image"] as! PFFileObject
+                let urlString = imageFile.url!
+                let url = URL(string: urlString)!
+                cell.imageItem.af.setImage(withURL: url)
         return cell
     }
 
@@ -37,18 +70,8 @@ class FeedTableViewController: UITableViewController {
         return posts.count
     }
     override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        let query = PFQuery(className: "items")
-        query.limit = 20
-        query.findObjectsInBackground{
-            (posts, error) in
-            if posts != nil{
-                self.posts = posts!
-                self.tableView.reloadData()
-                self.tableView.rowHeight=UITableView.automaticDimension
-                self.tableView.estimatedRowHeight = 150
-            }
-        }
+        self.loadFeed()
+        
         
     }
     /*
@@ -96,15 +119,34 @@ class FeedTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let post = posts[indexPath.row]
+        let detailsViewController = segue.destination as! DetailsViewController
+        detailsViewController.post = post
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-    */
+
+    @objc func loadFeed(){
+        let query = PFQuery(className: "items")
+        query.whereKey("auctionOver", equalTo:false)
+        query.limit = 20
+        query.findObjectsInBackground{
+            (posts, error) in
+            if posts != nil{
+                self.posts = posts!
+                self.tableView.reloadData()
+                
+            }
+        }
+    }
     @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()
                  let main = UIStoryboard(name: "Main", bundle: nil)

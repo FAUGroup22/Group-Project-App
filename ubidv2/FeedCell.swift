@@ -9,7 +9,19 @@ import UIKit
 
 class FeedCell: UITableViewCell {
 
+    
+    @IBOutlet weak var bidLabel: UILabel!
+    
+    
+    @IBOutlet weak var timeRemaining: UILabel!
+    
     @IBOutlet weak var titleLable: UILabel!
+    
+    
+
+    
+    
+    @IBOutlet weak var imageItem: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
