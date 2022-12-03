@@ -14,6 +14,7 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
         ti.text = post["title"] as? String
         // Do any additional setup after loading the view.
+        
     }
     
     @IBOutlet weak var ti: UILabel!
