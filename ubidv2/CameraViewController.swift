@@ -12,6 +12,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     var auctionTime = 10080
     var highBidder = 0
+    
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var titleTextField: UITextField!
@@ -34,6 +35,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         picker.delegate = self
         picker.allowsEditing = true
         if UIImagePickerController.isSourceTypeAvailable(.camera){
+            picker.sourceType = .camera
         }
         else{
             picker.sourceType = .photoLibrary
@@ -70,6 +72,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         post["title"] = titleTextField.text
         let bid: Double? = Double(bidTextField.text!)
         post["statingBid"] = bid
+        post["highestBid"] = bid
         post["auctionTime"] = Date().addingTimeInterval(TimeInterval(auctionTime*60))
         post["highbidderId"] = highBidder
         post["author"] = PFUser.current()!
