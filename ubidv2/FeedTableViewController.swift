@@ -14,6 +14,7 @@ class FeedTableViewController: UITableViewController {
         super.viewDidLoad()
         loadFeed()
         myRefreshControll.addTarget(self, action: #selector(loadFeed), for: .valueChanged)
+        tableView.refreshControl=myRefreshControll
         self.tableView.rowHeight=UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 150
         
@@ -137,6 +138,7 @@ class FeedTableViewController: UITableViewController {
     }
 
     @objc func loadFeed(){
+        self.posts.removeAll()
         let query = PFQuery(className: "items")
         query.whereKey("auctionOver", equalTo:false)
         query.limit = 20
@@ -145,7 +147,7 @@ class FeedTableViewController: UITableViewController {
             if posts != nil{
                 self.posts = posts!
                 self.tableView.reloadData()
-                
+                self.myRefreshControll.endRefreshing()
             }
         }
     }
