@@ -126,12 +126,14 @@ class FeedTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        let cell = sender as! UITableViewCell
-        let indexPath = tableView.indexPath(for: cell)!
-        let post = posts[indexPath.row]
-        let detailsViewController = segue.destination as! DetailsViewController
-        detailsViewController.post = post
-        tableView.deselectRow(at: indexPath, animated: true)
+        if segue.identifier == "detailSegue" {
+                let cell = sender as! UITableViewCell
+                let indexPath = tableView.indexPath(for: cell)!
+                let post = posts[indexPath.row]
+                let detailsViewController = segue.destination as! DetailsViewController
+                detailsViewController.post = post
+                tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
 
     @objc func loadFeed(){
@@ -147,6 +149,10 @@ class FeedTableViewController: UITableViewController {
             }
         }
     }
+    @IBAction func onCamera(_ sender: Any) {
+        performSegue(withIdentifier: "camSeg", sender: sender)
+    }
+    
     @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()
                  let main = UIStoryboard(name: "Main", bundle: nil)

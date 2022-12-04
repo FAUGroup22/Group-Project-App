@@ -320,7 +320,7 @@
                                     <outlet property="imageItem" destination="NmU-fT-Evx" id="BsU-92-U3L"/>
                                     <outlet property="timeRemaining" destination="i43-Jh-FL2" id="V30-8m-jEi"/>
                                     <outlet property="titleLable" destination="6oC-jm-gAB" id="uvt-og-Hxa"/>
-                                    <segue destination="HE5-6W-4CE" kind="show" id="az7-j0-4N2"/>
+                                    <segue destination="HE5-6W-4CE" kind="show" identifier="detailSegue" id="az7-j0-4N2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -337,7 +337,8 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="camera" catalog="system" id="ZZZ-pg-Kzp">
                             <connections>
-                                <segue destination="oGH-pf-4dt" kind="presentation" id="XRo-pm-NDl"/>
+                                <action selector="onCamera:" destination="dMv-WV-GY2" id="DXg-9S-vmx"/>
+                                <segue destination="oGH-pf-4dt" kind="presentation" identifier="camSeg" id="cwv-LU-lmW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -456,7 +457,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1067.9389312977098" y="2498.5915492957747"/>
+            <point key="canvasLocation" x="1189" y="2663"/>
         </scene>
         <!--Home-->
         <scene sceneID="P4S-5e-WtK">
