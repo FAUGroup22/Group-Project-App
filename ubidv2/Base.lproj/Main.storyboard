@@ -116,7 +116,7 @@
             </objects>
             <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Won Items-->
         <scene sceneID="CgQ-sE-ucq">
             <objects>
                 <tableViewController id="bna-iz-ET1" sceneMemberID="viewController">
@@ -139,7 +139,7 @@
                             <outlet property="delegate" destination="bna-iz-ET1" id="ozs-2P-qpv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="oex-Xq-oxR"/>
+                    <navigationItem key="navigationItem" title="Won Items" id="oex-Xq-oxR"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wn7-8N-LqJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -171,7 +171,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bn6-lc-0DU">
-                                <rect key="frame" x="53" y="134" width="33" height="21"/>
+                                <rect key="frame" x="113" y="416" width="187" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -188,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9h4-dA-9WJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="340" y="1806"/>
+            <point key="canvasLocation" x="339.69465648854958" y="1805.6338028169016"/>
         </scene>
         <!--Live Auctions-->
         <scene sceneID="YTT-Ag-VSL">
@@ -423,7 +423,7 @@
             </objects>
             <point key="canvasLocation" x="1169" y="898"/>
         </scene>
-        <!--Root View Controller-->
+        <!--My Items-->
         <scene sceneID="Kqe-dL-WMe">
             <objects>
                 <tableViewController id="Yek-Z1-cBG" sceneMemberID="viewController">
@@ -446,7 +446,7 @@
                             <outlet property="delegate" destination="Yek-Z1-cBG" id="VFY-TO-ix6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="vSz-a1-VNa"/>
+                    <navigationItem key="navigationItem" title="My Items" id="vSz-a1-VNa"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="phO-uk-xnV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -494,7 +494,7 @@
         <image name="camera" catalog="system" width="128" height="93"/>
         <image name="dollarsign" catalog="system" width="89" height="128"/>
         <image name="house" catalog="system" width="128" height="104"/>
-        <image name="image_placeholder" width="375" height="375"/>
+        <image name="image_placeholder" width="500" height="500"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

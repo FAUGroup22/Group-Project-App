@@ -1,15 +1,16 @@
 {
   "images" : [
     {
-      "filename" : "ubid_logo.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "ubid_logo_@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "ubid_logo_@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
