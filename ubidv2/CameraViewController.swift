@@ -11,7 +11,7 @@ import Parse
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var auctionTime = 10080
-    var highBidder = 0
+    var highBidder = PFUser.current()
     
     @IBOutlet weak var imageView: UIImageView!
     

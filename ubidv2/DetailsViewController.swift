@@ -23,6 +23,9 @@ class DetailsViewController: UIViewController {
         let bid:Double = post["statingBid"] as! Double
         let bidStr = String(format: "$%.2f", bid)
         currentBidLabel.text = bidStr
+        let nextBid:Double = bid*1.05
+        let nextBidStr = String(format: "$%.2f",nextBid)
+        NextBid.text = nextBidStr 
         
         let currDate = Date()
         let endDate: Date = post["auctionTime"] as! Date
@@ -46,6 +49,7 @@ class DetailsViewController: UIViewController {
     
     @IBOutlet weak var timeleftLabel: UILabel!
     
+    @IBOutlet weak var NextBid: UILabel!
     @IBOutlet weak var currentBidLabel: UILabel!
     
     @IBOutlet weak var countdownLabel: UILabel!
@@ -54,8 +58,13 @@ class DetailsViewController: UIViewController {
         let bid:Double = post["statingBid"] as! Double
         let newBid = 1.05 * bid
         let bidStr = String(format: "$%.2f", newBid)
+        let nextBid = 1.05 * newBid
+        let nextBidStr = String(format: "$%.2f", nextBid)
         currentBidLabel.text = bidStr
+        NextBid.text = nextBidStr
         //post.add(newBid, forKey: "statingBid")
+        
+        post.setObject(PFUser.current()!, forKey: "highbidderId")
         post.setObject(newBid, forKey: "statingBid")
         post.saveInBackground { (success, error) in
             if success {
