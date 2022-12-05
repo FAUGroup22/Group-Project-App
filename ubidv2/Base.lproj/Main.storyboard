@@ -503,22 +503,34 @@
             </objects>
             <point key="canvasLocation" x="1169" y="898"/>
         </scene>
-        <!--Root View Controller-->
+        <!--My Items-->
         <scene sceneID="Kqe-dL-WMe">
             <objects>
-                <tableViewController id="Yek-Z1-cBG" sceneMemberID="viewController">
+                <tableViewController id="Yek-Z1-cBG" customClass="MyItemsTableViewController" customModule="ubidv2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Gup-Ba-gdL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Qoy-wp-sj8">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myItemsCell" rowHeight="200" id="Qoy-wp-sj8" customClass="MyItemsTableViewCell" customModule="ubidv2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qoy-wp-sj8" id="agH-H0-qfb">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXv-fZ-lYv">
+                                            <rect key="frame" x="47" y="11" width="247" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleLabel" destination="xXv-fZ-lYv" id="8yR-MJ-GKh"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -526,11 +538,11 @@
                             <outlet property="delegate" destination="Yek-Z1-cBG" id="VFY-TO-ix6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="vSz-a1-VNa"/>
+                    <navigationItem key="navigationItem" title="My Items" id="vSz-a1-VNa"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="phO-uk-xnV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2007" y="1711"/>
+            <point key="canvasLocation" x="2006.8702290076335" y="1710.5633802816901"/>
         </scene>
         <!--My Items-->
         <scene sceneID="Pib-4U-0Mi">

@@ -11,6 +11,7 @@ import AlamofireImage
 class DetailsViewController: UIViewController {
     var post: PFObject!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         ti.text = post["title"] as? String
@@ -38,6 +39,7 @@ class DetailsViewController: UIViewController {
         let remainingString = formatter.string(from: remainingTime)
         countdownLabel.text = remainingString
         
+
        
     }
     
@@ -55,6 +57,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var countdownLabel: UILabel!
     
     @IBAction func bidButton(_ sender: Any) {
+        
         let bid:Double = post["statingBid"] as! Double
         let newBid = 1.05 * bid
         let bidStr = String(format: "$%.2f", newBid)

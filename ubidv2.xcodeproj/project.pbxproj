@@ -23,6 +23,8 @@
 		658065242936E4ED0085616C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658065232936E4ED0085616C /* CameraViewController.swift */; };
 		65E17423293D2B860098DA16 /* WonItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E17422293D2B860098DA16 /* WonItemsTableViewController.swift */; };
 		65E17425293D2BB90098DA16 /* WonItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E17424293D2BB90098DA16 /* WonItemsTableViewCell.swift */; };
+		65E17427293D7D2F0098DA16 /* MyItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E17426293D7D2F0098DA16 /* MyItemsTableViewController.swift */; };
+		65E17429293D7D580098DA16 /* MyItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E17428293D7D570098DA16 /* MyItemsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		658065232936E4ED0085616C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		65E17422293D2B860098DA16 /* WonItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonItemsTableViewController.swift; sourceTree = "<group>"; };
 		65E17424293D2BB90098DA16 /* WonItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonItemsTableViewCell.swift; sourceTree = "<group>"; };
+		65E17426293D7D2F0098DA16 /* MyItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyItemsTableViewController.swift; sourceTree = "<group>"; };
+		65E17428293D7D570098DA16 /* MyItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyItemsTableViewCell.swift; sourceTree = "<group>"; };
 		BD9F0E772600502D9AD77237 /* Pods_ubidv2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ubidv2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -139,6 +143,8 @@
 				6559852A293BD57F007CC9CF /* DetailsViewController.swift */,
 				65E17422293D2B860098DA16 /* WonItemsTableViewController.swift */,
 				65E17424293D2BB90098DA16 /* WonItemsTableViewCell.swift */,
+				65E17426293D7D2F0098DA16 /* MyItemsTableViewController.swift */,
+				65E17428293D7D570098DA16 /* MyItemsTableViewCell.swift */,
 			);
 			path = ubidv2;
 			sourceTree = "<group>";
@@ -348,10 +354,12 @@
 				658065242936E4ED0085616C /* CameraViewController.swift in Sources */,
 				65E17425293D2BB90098DA16 /* WonItemsTableViewCell.swift in Sources */,
 				657A04F2293A332800BBBCD7 /* FeedTableViewController.swift in Sources */,
+				65E17427293D7D2F0098DA16 /* MyItemsTableViewController.swift in Sources */,
 				65E17423293D2B860098DA16 /* WonItemsTableViewController.swift in Sources */,
 				657B865D2936A394003DA41F /* AppDelegate.swift in Sources */,
 				6559852B293BD57F007CC9CF /* DetailsViewController.swift in Sources */,
 				657B865F2936A394003DA41F /* SceneDelegate.swift in Sources */,
+				65E17429293D7D580098DA16 /* MyItemsTableViewCell.swift in Sources */,
 				657A04F4293A338C00BBBCD7 /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
