@@ -17,7 +17,7 @@ class MyItemsTableViewController: UITableViewController {
         myRefreshControll.addTarget(self, action: #selector(loadFeed), for: .valueChanged)
         tableView.refreshControl=myRefreshControll
         self.tableView.rowHeight=UITableView.automaticDimension
-        self.tableView.estimatedRowHeight = 150
+        self.tableView.rowHeight = 155
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -37,13 +37,38 @@ class MyItemsTableViewController: UITableViewController {
         return posts.count
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        self.loadFeed()
+        
+    }
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myItemsCell", for: indexPath) as! MyItemsTableViewCell
         let post = posts[indexPath.row]
         cell.titleLabel.text = post["title"] as? String
         // Configure the cell...
-
+        let bid:Double = post["statingBid"] as! Double
+        let bidStr = String(format: "$%.2f", bid)
+        cell.currentBidLabel.text = bidStr
+        
+        let currDate = Date()
+        let endDate: Date = post["auctionTime"] as! Date
+        let remainingTime: TimeInterval = endDate.timeIntervalSince(currDate);
+        let formatter = DateComponentsFormatter()
+        formatter.unitsStyle = .short
+        formatter.allowedUnits = [.hour, .minute]
+        formatter.zeroFormattingBehavior = .pad
+        
+        let remainingString = formatter.string(from: remainingTime)
+        cell.countdownLabel.text = remainingString
+        
+        let imageFile = post["image"] as! PFFileObject
+                let urlString = imageFile.url!
+                let url = URL(string: urlString)!
+        cell.itemImageView.af.setImage(withURL: url)
+        
+        
         return cell
     }
 

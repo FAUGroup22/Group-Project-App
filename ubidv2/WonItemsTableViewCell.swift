@@ -13,8 +13,9 @@ class WonItemsTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var titleLabel: UILabel!
-    
-    
+    @IBOutlet weak var highbidLabel: UILabel!
+    @IBOutlet weak var cbidLabel: UILabel!
+    @IBOutlet weak var itemimageView: UIImageView!
     
     
     override func awakeFromNib() {

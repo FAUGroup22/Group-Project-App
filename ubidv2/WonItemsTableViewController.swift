@@ -11,16 +11,13 @@ class WonItemsTableViewController: UITableViewController {
 
     var posts = [PFObject]()
     let myRefreshControll = UIRefreshControl()
-    
-    
-    
     override func viewDidLoad() {
         loadFeed()
         super.viewDidLoad()
         myRefreshControll.addTarget(self, action: #selector(loadFeed), for: .valueChanged)
         tableView.refreshControl=myRefreshControll
         self.tableView.rowHeight=UITableView.automaticDimension
-        self.tableView.estimatedRowHeight = 150
+        self.tableView.rowHeight = 155
         
         
         
@@ -45,17 +42,32 @@ class WonItemsTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return posts.count
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.loadFeed()
+        
+        
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "wonCell", for: indexPath) as! WonItemsTableViewCell
         let post = posts[indexPath.row]
         cell.titleLabel.text = post["title"] as? String
         // Configure the cell...
+        let bid:Double = post["statingBid"] as! Double
+        let bidStr = String(format: "$%.2f", bid)
+        cell.cbidLabel.text = bidStr
+        
+        
 
+        let imageFile = post["image"] as! PFFileObject
+            let urlString = imageFile.url!
+            let url = URL(string: urlString)!
+          cell.itemimageView.af.setImage(withURL: url)
+        
         return cell
     }
-    
+        
 
     /*
     // Override to support conditional editing of the table view.
