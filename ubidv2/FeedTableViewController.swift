@@ -18,6 +18,8 @@ class FeedTableViewController: UITableViewController {
         self.tableView.rowHeight=UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 150
         
+        
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -43,14 +45,6 @@ class FeedTableViewController: UITableViewController {
 
         let remainingString = formatter.string(from: remainingTime)
         cell.timeRemaining.text = remainingString
-        
-        
-        
-        
-        
-        
-        
-        
         
         let imageFile = post["image"] as! PFFileObject
                 let urlString = imageFile.url!

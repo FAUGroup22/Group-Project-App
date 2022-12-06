@@ -7,6 +7,7 @@
 
 import UIKit
 import Parse
+import SwiftUI
 import AlamofireImage
 class DetailsViewController: UIViewController {
     var post: PFObject!
@@ -39,6 +40,9 @@ class DetailsViewController: UIViewController {
         let remainingString = formatter.string(from: remainingTime)
         countdownLabel.text = remainingString
         
+        descriptionLabel.text = post["description"] as? String
+        
+        
 
        
     }
@@ -53,11 +57,38 @@ class DetailsViewController: UIViewController {
     
     @IBOutlet weak var NextBid: UILabel!
     @IBOutlet weak var currentBidLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
     @IBOutlet weak var countdownLabel: UILabel!
     
+    
     @IBAction func bidButton(_ sender: Any) {
+        //Declare Alert Message
+        let dialogMessage = UIAlertController(title: "Confirm Bid", message: "Are you sure your would like to place bid?", preferredStyle: .alert)
         
+        //Create Confirm button with action handler
+        let confirm = UIAlertAction(title: "Yes", style: .default, handler:
+                { (action) ->Void in
+            print("The confirm button was pressed")
+            self.confirmBid()
+        })
+        
+        //Create Cancel Button with action handler
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) -> Void in
+            print("The cancel button was pressed")
+            
+        }
+        
+        //Add Confirm and Cancel Button to Dialog message
+        dialogMessage.addAction(confirm)
+        dialogMessage.addAction(cancel)
+        
+        //Present the dialog box to user
+        self.present(dialogMessage, animated: true, completion: nil)
+    
+    }
+    
+    func confirmBid(){
         let bid:Double = post["statingBid"] as! Double
         let newBid = 1.05 * bid
         let bidStr = String(format: "$%.2f", newBid)
