@@ -15,7 +15,7 @@ Original App Design Project - README Template
 This is an app that will allow people to bid on items they would like to own.
 
 
-<img src='http://g.recordit.co/8edBIfa2uL.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/BzgR4w5Se3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 
@@ -42,11 +42,11 @@ This is an app that will allow people to bid on items they would like to own.
 * The user can click a specific auction and make bid 
 * The user can post items for auction
 * The user can see what items they have won
-* The user can pay for items through an api
+
 * The user can edit items 
 
 **Optional Nice-to-have Stories**
-
+* The user can pay for items through an api
 * User can view their profile of recently bidded items
 *  The user can view passed bids
 
