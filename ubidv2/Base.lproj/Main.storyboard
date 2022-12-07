@@ -132,7 +132,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="155"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8v-Ow-1lr">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8v-Ow-1lr">
                                             <rect key="frame" x="156" y="11" width="36.333333333333343" height="21"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -168,6 +168,9 @@
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="p8v-Ow-1lr" firstAttribute="top" secondItem="cqR-4P-TfT" secondAttribute="topMargin" id="BR9-wE-yeW"/>
+                                        <constraint firstItem="p8v-Ow-1lr" firstAttribute="leading" secondItem="r6e-Hp-4Tc" secondAttribute="trailing" constant="8" symbolic="YES" id="C2s-XY-uVq"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="r6e-Hp-4Tc" secondAttribute="bottom" constant="3" id="QLD-YE-umi"/>
                                         <constraint firstItem="r6e-Hp-4Tc" firstAttribute="top" secondItem="cqR-4P-TfT" secondAttribute="top" id="uYw-Q4-8Ac"/>
                                         <constraint firstItem="r6e-Hp-4Tc" firstAttribute="leading" secondItem="cqR-4P-TfT" secondAttribute="leading" id="w1e-Cn-bNz"/>
                                         <constraint firstItem="p8v-Ow-1lr" firstAttribute="leading" secondItem="r6e-Hp-4Tc" secondAttribute="trailing" constant="8" symbolic="YES" id="zKX-pf-8bm"/>
